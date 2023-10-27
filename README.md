@@ -26,7 +26,7 @@ After the project is built, we have the following commands that perform CRUD ope
 
 Note that any other command will not be recognized and will trigger error message. If you would like to insert/update/delete a particular record, feel free to modify the `main.rs` file. All dependencies are listed under `Cargo.toml`.
 
-If you execute command `load`, `create`, `update` and `delete` in order, between each command you should be able to run `read` command to see how a row in the table has been changed by the command.
+If you execute command `load`, `create`, `update` and `delete` in order, between each command you should be able to run `read` command to see how a row in the table has been changed by the command. If any command fails to run, you will see a corresponding error message explaining the reason. 
 
 ## Optimized Rust Binary
 In `.workflow/rs_cicd.yml`, feel free to change th path of Rust Binary as a GitHub Actions artifact.

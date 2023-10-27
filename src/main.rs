@@ -6,7 +6,7 @@ use IDP2_yuhan_rust::{create, delete, load, read, update};
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        println!("Please specify the arugments. Usage: {} [action]", args[0]);
+        println!("Please specify the operation to perform. Usage: {} [action]", args[0]);
         return;
     }
 
@@ -22,11 +22,11 @@ fn main() {
                 if let Err(err) = create(4, 94, 78, 31, 85, 33.1, 0.446, 22, 1) {
                     eprintln!("Error: {:?}", err);
                 } else {
-                    println!("Query executed successfully!");
+                    println!("Create Success!");
                 }
             } else {
                 println!(
-                    "We only support sample function invocation. Usage: {} query [SQL query]",
+                    "Usage: {} query [SQL query]",
                     args[0]
                 );
             }
@@ -37,11 +37,11 @@ fn main() {
                 if let Err(err) = read() {
                     eprintln!("Error: {:?}", err);
                 } else {
-                    println!("Query executed successfully!");
+                    println!("Read Success!");
                 }
             } else {
                 println!(
-                    "We only support sample function invocation. Usage: {} query [SQL query]",
+                    "Usage: {} query [SQL query]",
                     args[0]
                 );
             }
@@ -52,11 +52,11 @@ fn main() {
                 if let Err(err) = update(1, 4, 94, 78, 31, 85, 33.1, 0.446, 22, 1) {
                     eprintln!("Error: {:?}", err);
                 } else {
-                    println!("Query executed successfully!");
+                    println!("Update Success!");
                 }
             } else {
                 println!(
-                    "We only support sample function invocation. Usage: {} query [SQL query]",
+                    "Usage: {} query [SQL query]",
                     args[0]
                 );
             }
@@ -67,17 +67,17 @@ fn main() {
                 if let Err(err) = delete(10) {
                     eprintln!("Error: {:?}", err);
                 } else {
-                    println!("Query executed successfully!");
+                    println!("Delete Success!");
                 }
             } else {
                 println!(
-                    "We only support sample function invocation. Usage: {} query [SQL query]",
+                    "Usage: {} query [SQL query]",
                     args[0]
                 );
             }
         }
         _ => {
-            println!("Invalid action. Use 'extract', 'transform_load', 'create', 'delete', 'update' or 'query' command.");
+            println!("Please only use one of the following commands: 'load', 'create', 'delete', 'update' or 'read' command.");
         }
     }
 }
