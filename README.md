@@ -5,7 +5,7 @@
 This individual project 2 contains Rust scripts/functions that perform CRUD operations in SQLite. 
 
 
-## Formatting and Erorrs
+## Formatting and Errors
 Please run `make all` to ensure all codes are well-formatted and free of errors.
 
 ## Explanation of the Project
@@ -37,3 +37,6 @@ name: Rust Binary
         name: optimized-binary
         path: target/release/IDP2_yuhan_rust
 ```
+
+### Demo Video Link
+Project walkthrough: [link](link)
