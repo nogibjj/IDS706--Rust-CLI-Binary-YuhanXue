@@ -128,7 +128,7 @@ pub fn create(
             age,
             outcome
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
         params![
             pregnancies,
             glucose,
