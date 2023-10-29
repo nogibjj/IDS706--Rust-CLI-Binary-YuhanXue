@@ -42,4 +42,4 @@ name: Rust Binary
 ```
 
 ### Demo Video Link
-Project walkthrough: [link](link)
+Project walkthrough: [https://youtu.be/vHKJTb5rBOQ](https://youtu.be/vHKJTb5rBOQ)
