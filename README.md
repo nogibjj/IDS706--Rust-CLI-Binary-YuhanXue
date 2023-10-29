@@ -28,6 +28,9 @@ Note that any other command will not be recognized and will trigger error messag
 
 If you execute command `load`, `create`, `update` and `delete` in order, between each command you should be able to run `read` command to see how a row in the table has been changed by the command. If any command fails to run, you will see a corresponding error message explaining the reason. 
 
+## Utilization of GitHub Copilot
+I utilized GitHub Copilot to get real-time suggestions on my Rust code. Rust has different style from Python and I sometimes get confused by the style difference. GitHub Copilot provides some autocomplete style and error handling recommendations for my Rust codes, which are generally correct so it helps me code faster and more efficiently.
+
 ## Optimized Rust Binary
 In `.workflow/rs_cicd.yml`, feel free to change th path of Rust Binary as a GitHub Actions artifact.
 ```
