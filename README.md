@@ -1,4 +1,4 @@
-# IDS706--Rust-CLI-Binary-YuhanXue
+# IDS706-Rust-CLI-Binary-YuhanXue
 
 ![format workflow](https://github.com/nogibjj/IDS706--Rust-CLI-Binary-YuhanXue/actions/workflows/rs_cicd.yml/badge.svg)
 
