@@ -6,7 +6,10 @@ use IDP2_yuhan_rust::{create, delete, load, read, update};
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        println!("Please specify the operation to perform. Usage: {} [action]", args[0]);
+        println!(
+            "Please specify the operation to perform. Usage: {} [action]",
+            args[0]
+        );
         return;
     }
 
@@ -25,10 +28,7 @@ fn main() {
                     println!("Create Success!");
                 }
             } else {
-                println!(
-                    "Usage: {} query [SQL query]",
-                    args[0]
-                );
+                println!("Usage: {} query [SQL query]", args[0]);
             }
         }
         "read" => {
@@ -40,10 +40,7 @@ fn main() {
                     println!("Read Success!");
                 }
             } else {
-                println!(
-                    "Usage: {} query [SQL query]",
-                    args[0]
-                );
+                println!("Usage: {} query [SQL query]", args[0]);
             }
         }
         "update" => {
@@ -55,10 +52,7 @@ fn main() {
                     println!("Update Success!");
                 }
             } else {
-                println!(
-                    "Usage: {} query [SQL query]",
-                    args[0]
-                );
+                println!("Usage: {} query [SQL query]", args[0]);
             }
         }
         "delete" => {
@@ -70,10 +64,7 @@ fn main() {
                     println!("Delete Success!");
                 }
             } else {
-                println!(
-                    "Usage: {} query [SQL query]",
-                    args[0]
-                );
+                println!("Usage: {} query [SQL query]", args[0]);
             }
         }
         _ => {

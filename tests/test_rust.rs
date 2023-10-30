@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use IDP2_yuhan_rust::{load, read, create, update, delete};
+    use IDP2_yuhan_rust::{create, delete, load, read, update};
 
     use std::fs;
     use std::path::Path;
@@ -40,7 +40,7 @@ mod tests {
     }
 }
 
-fn main(){
+fn main() {
     tests::test_load();
     tests::test_read();
     tests::test_create();
